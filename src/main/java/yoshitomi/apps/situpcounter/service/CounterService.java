@@ -19,4 +19,8 @@ public class CounterService {
     public void updateCounterValue() {
         counterDataRepository.updateCounter();
     }
+
+    public void setCounterValue(int value) {
+        counterDataRepository.setCounter(value);
+    }
 }
