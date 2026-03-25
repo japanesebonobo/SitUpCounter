@@ -21,4 +21,8 @@ public class CounterDataRepository {
     public void updateCounter() {
         jdbcTemplate.update("UPDATE counter SET count = count + 100 WHERE id = 1");
     }
+
+    public void setCounter(int value) {
+        jdbcTemplate.update("UPDATE counter SET count = ? WHERE id = 1", value);
+    }
 }
