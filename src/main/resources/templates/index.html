@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SitUp Counter</title>
+</head>
+<body>
+    <h1>腹筋カウンター</h1>
+    <p>現在のカウント: <span th:text="${count}"></span></p>
+    <form action="/update" method="post">
+        <button type="submit">+100</button>
+    </form>
+</body>
+</html>
