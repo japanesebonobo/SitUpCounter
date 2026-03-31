@@ -26,4 +26,10 @@ public class WebController {
         counterService.updateCounterValue();
         return "redirect:/";
     }
+
+    @PostMapping("/decrement")
+    public String decrement() {
+        counterService.decrementCounterValue();
+        return "redirect:/";
+    }
 }
