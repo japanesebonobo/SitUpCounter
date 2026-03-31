@@ -23,4 +23,8 @@ public class CounterService {
     public void setCounterValue(int value) {
         counterDataRepository.setCounter(value);
     }
+
+    public void decrementCounterValue() {
+        counterDataRepository.decrementCounter();
+    }
 }
